@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="69dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:id="@+id/pro"
+        android:layout_marginLeft="6dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:layout_editor_absoluteX="-1dp"
+        card_view:layout_editor_absoluteY="-3dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="48dp"
+                android:visibility="invisible"
+                android:src="@drawable/circle_for_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nameLetter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4.5dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingTop="6dp"
+                android:text="DP"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="@id/imageView5"
+                app:layout_constraintTop_toTopOf="@id/imageView5" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="18dp"
+                android:visibility="visible"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/person1"
+                app:civ_border_color="#3283b2"
+                app:civ_border_width="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="97dp"
+                android:layout_marginTop="96dp"
+                android:hint="Phone no."
+                android:text="7349064541"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="379dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="52dp"
+                android:background="#9F3283B2"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:text="Welcome dear customer"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@id/pro"
+                app:layout_constraintTop_toTopOf="@+id/pro"
+                card_view:ignore="MissingConstraints,NotSibling" />
+
+            <TextView
+                android:id="@+id/emailtextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="97dp"
+                android:layout_marginTop="70dp"
+                android:hint="Email"
+                android:text="sazalmalhotra04@gmail.com"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="97dp"
+                android:layout_marginTop="47dp"
+                android:hint="Name"
+                android:text="Sazal Malhotra"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/imageView10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="328dp"
+                android:layout_marginTop="23dp"
+                android:drawableRight="@drawable/more"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@tools:sample/avatars" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/textView128"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="238dp"
+                android:layout_marginBottom="68dp"
+                android:elevation="100dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView129"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/settings"
+                    android:paddingTop="6dp"
+                    android:paddingRight="3dp"
+                    android:text="Profile photo"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/customcard1"
+
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="474dp"
+        android:background="#9F3283B2"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:text="Provide the complete information above to become a verified user else your verification will be rejected."
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Required documentation"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="156dp"
+        android:background="#9F3283B2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Help us verify your identity to serve you better.\nPlease upload the verification details below to continue using Parkinncharge."
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="65dp"
+        android:id="@+id/verify"
+        android:drawableRight="@drawable/forward"
+        android:paddingRight="12dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/customcard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="65dp"
+        android:id="@+id/userinfo"
+        android:drawableRight="@drawable/forward"
+        android:paddingRight="12dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/customcard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="380dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="564dp"
+        android:background="@drawable/customcard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="72dp"
+        android:text="KYC documents"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/textView49"
+        app:layout_constraintEnd_toEndOf="@id/textView49" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="44dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="User information"
+        app:layout_constraintBottom_toBottomOf="@id/textView49"
+        app:layout_constraintEnd_toEndOf="@id/textView49" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="542dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+
+        android:text="Verification  status"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="379dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="664dp"
+
+        android:background="#9F3283B2"
+        android:gravity="center_horizontal"
+        android:paddingTop="4dp"
+        android:paddingLeft="10dp"
+        android:text="If rejected please upload your documents  again."
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView49"
+        app:layout_constraintEnd_toEndOf="@id/textView49"
+        card_view:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:background="@drawable/file"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/verify"
+        app:layout_constraintEnd_toEndOf="@id/verify"
+        card_view:srcCompat="@tools:sample/avatars" />
+    <ImageView
+        android:id="@+id/imageView9"
+        android:background="@drawable/car"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/userinfo"
+        app:layout_constraintEnd_toEndOf="@id/userinfo"
+        card_view:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="23dp"
+        android:text="KYC documents"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/verify"
+        app:layout_constraintEnd_toEndOf="@id/verify" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="23dp"
+        android:text="User information"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/userinfo"
+        app:layout_constraintEnd_toEndOf="@id/userinfo" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/textView49"
+        app:layout_constraintEnd_toEndOf="@id/textView49">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:buttonTint="#FB8C00"
+            android:checked="true"
+            android:text="Pending"
+            android:textColor="#FB8C00"
+            card_view:layout_editor_absoluteX="113dp"
+            card_view:layout_editor_absoluteY="596dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:buttonTint="#1B5E20"
+            android:textColor="#1B5E20"
+            android:text="Verified" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="#B71C1C"
+            android:buttonTint="#B71C1C"
+            android:text="Rejected" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/textView49"
+        app:layout_constraintEnd_toEndOf="@id/textView49">
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+
+            android:buttonTint="#FB8C00"
+            android:checked="true"
+            android:text="Pending"
+            android:textColor="#FB8C00"
+            card_view:layout_editor_absoluteX="113dp"
+            card_view:layout_editor_absoluteY="596dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="#1B5E20"
+            android:buttonTint="#1B5E20"
+            android:text="Verified" />
+        <RadioButton
+            android:id="@+id/radioButton33"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="#B71C1C"
+            android:buttonTint="#B71C1C"
+            android:text="Rejected" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

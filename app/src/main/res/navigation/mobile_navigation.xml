@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.maker.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_premiumparking"
+        android:name="com.example.maker.ui.PremiumparkingFragment"
+        android:label="Premium Parking"
+        tools:layout="@layout/fragment_premiumparking" />
+
+    <fragment
+        android:id="@+id/nav_mybookings"
+        android:name="com.example.maker.ui.Bookings.Mybookings"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_mybookings" />
+
+    <activity
+        android:id="@+id/nav_owner"
+        android:name="com.example.maker.ui.Switchtoowner.Owner"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_owner" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.maker.ui.share.ShareFragment"
+        android:label="Share and Earn"
+
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.maker.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.maker.ui.ProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/premium_proceedbook"
+        android:name="com.example.maker.premium_proceedbook"
+        android:label="Confirm Booking"
+        tools:layout="@layout/fragment_premium_proceedbook" />
+</navigation>

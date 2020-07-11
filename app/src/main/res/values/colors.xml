@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#3282b8</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gradient_start_color">#000000</color>
+    <color name="gradient_end_color">#000000</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#D3D0D0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#ffffff</color>
+
+</resources>

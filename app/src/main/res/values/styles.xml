@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">#ffffff</item>
+        <item name="colorPrimary">@color/common_google_signin_btn_text_dark_default</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Color_checkbox" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="colorAccent">#3283b2</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:statusBarColor">#ffffff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:statusBarColor">#ffffff</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style >
+    <style name="tabtext" parent="Widget.MaterialComponents.TabLayout">
+        <item name ="android:state_focused">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="title">
+        <item name = "android:textColor">#3283b2</item>
+        <item name = "android:textSize">16dp</item>
+    </style>
+    <style name="Underline">
+        <item name="android:textColor">#3283b2</item>
+        <item name="android:background">@drawable/underline</item>
+    </style>
+    <style name="navigation12">
+        <item name = "android:textColor">#3283b2</item>
+        <item name = "android:listPreferredItemPaddingLeft">100dp</item>
+        <item name = "android:listPreferredItemPaddingStart">100dp</item>
+        <item name = "android:textSize">16dp</item>
+    </style>
+</resources>

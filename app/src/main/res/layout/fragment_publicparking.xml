@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="430dp"
+android:id="@+id/publicparking"
+
+android:layout_height="match_parent">
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/spiner_style"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </Spinner>
+
+    <ImageView
+        android:id="@+id/imageVieww"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="334dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/arrow_drop_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zxscan"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+
+
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+    <ImageButton
+        android:id="@+id/flashOn"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/fab_background1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flash_on"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+
+        android:layout_marginTop="176dp"
+        android:text="Please scan the QR code at enterance."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <ImageButton
+        android:id="@+id/flashOff"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/fab_background1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/flash_off"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:text="Select below the mall of your visit."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

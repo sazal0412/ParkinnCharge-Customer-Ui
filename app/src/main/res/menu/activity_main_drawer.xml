@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_premiumparking"
+            android:icon="@drawable/park"
+            android:title="Premium Parking" />
+        <item
+            android:id="@+id/nav_mybookings"
+            android:icon="@drawable/bookings"
+            android:title="My Bookings" />
+        <item
+            android:id="@+id/nav_owner"
+            android:icon="@drawable/swap"
+            android:title="Switch to Owner" />
+
+    </group>
+
+    <item android:title="Offers"
+           android:id="@+id/offers">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share and Earn" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/offer"
+                    android:title="My Offers" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Communicate"
+        android:id="@+id/offers1">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share1"
+                    android:icon="@drawable/support"
+                    android:title="Support" />
+                <item
+                    android:id="@+id/nav_send1"
+                    android:icon="@drawable/about"
+                    android:title="About Us" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
